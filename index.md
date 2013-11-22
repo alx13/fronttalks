@@ -48,7 +48,7 @@ style: |
 
 # Justify, от которого не тошнит {#Cover}
 
-*Алексей Иванов и Александр Остапенко*
+*Алексей Иванов (@iadramelk) и Александр Остапенко (@alexalx13)*
 
 ![](pictures/cover.jpg)
 <!-- photo by John Carey, fiftyfootshadows.net -->
@@ -120,7 +120,7 @@ style: |
 1. [hyper.js](http://www.bramstein.com/projects/hypher/) + Словарь переносов
 2. [hypenator.js](https://code.google.com/p/hyphenator/)
 3. [http://quittance.ru/hyphenator.php](http://quittance.ru/hyphenator.php)
-4. [http://quittance.ru/blog/index.php?category=21] (http://quittance.ru/blog/index.php?category=21)
+4. [http://quittance.ru/blog/index.php?category=21](http://quittance.ru/blog/index.php?category=21) - описание алгоритма
 
 ## Pictures
 {:.cover }
@@ -138,6 +138,12 @@ style: |
 {:.cover }
 
 ![](pictures/slide_13.png)
+
+
+## Pictures
+{:.cover }
+
+![](pictures/slide_14.png)
 
 
 ## Правильная настройка переносов
@@ -191,6 +197,12 @@ style: |
 
 ![](pictures/slide_16.png)
 
+
+## Pictures
+{:.cover }
+
+![](pictures/slide_12.png)
+
 ## Pictures
 {:.cover }
 
@@ -207,11 +219,10 @@ style: |
 ![](pictures/example_3.png)
 
 
-## Где поиграться
+## Ссылки
 
-- [http://github.com/ridero/fronttalks](http://github.com/ridero/fronttalks
+- Где поиграться: [http://github.com/ridero/fronttalks](http://github.com/ridero/fronttalks
 )
-
-
-## Вопросы?
-{:.shout }
+- Когда-нибудь тут будет сервис по подготовке книг к печати: [http://ridero.ru](http://ridero.ru)
+- Мы в Твиттере: @iadramelk и @alexalx13
+- Вопросы?
