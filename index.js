@@ -217,9 +217,9 @@ format = function format(para, align) {
 
         if (align === 'sand-clock') {
             var leftOffset = ($(para).width()-triangleArray[lineIndex])/2;
-            newHTML+='<span class="line" style="width:'+triangleArray[lineIndex]+'px;left:'+leftOffset+'px;">'+tmp.join('')+'<span style="left:'+($(para).width()-leftOffset+10)+'px;" class="aside">'+(line.ratio/spaceCount).toFixed(4)+'</span></span>';
+            newHTML+='<span class="line" style="width:'+triangleArray[lineIndex]+'px;left:'+leftOffset+'px;">'+tmp.join('')+'<span style="left:'+($(para).width()-leftOffset+10)+'px;" class="aside">'+(line.ratio).toFixed(4)+'</span></span>';
         } else {
-            newHTML+='<span class="line">'+tmp.join('')+'<span class="aside">'+(line.ratio/spaceCount).toFixed(4)+'</span></span>';
+            newHTML+='<span class="line">'+tmp.join('')+'<span class="aside">'+(line.ratio).toFixed(4)+'</span></span>';
         }
 
     });
