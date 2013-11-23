@@ -1,0 +1,187 @@
+body {
+    font-family: 'PT Sans';
+    font-size: 14pt;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.before(@content: "") {
+    // content: @content;
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    text-align: center;
+    background: white;
+    outline: 1px solid blue;
+    font-size: 14px;
+    text-indent: 0;
+}
+
+p {
+    margin: 0;
+}
+
+div {
+    display: inline-block;
+    position: relative;
+    margin: 40px;
+    vertical-align: top;
+    page-break-after: always;
+    -webkit-page-break-after: always;
+    
+    &.slide_2 {
+        width: 800px;
+        p {
+            line-height: 1.2;
+            font-size: 13px;
+            font-family: Arial;
+            text-align: justify;
+            text-indent: 0;
+            margin: 0.7em;
+        }
+        &:before{
+            .before("slide_2");
+        }
+
+    }
+
+    &.slide_3,
+    &.slide_4,
+    &.slide_5,
+    &.slide_6,
+    &.slide_7,
+    &.slide_8,
+    &.slide_9,
+    &.slide_10,
+    &.slide_11,
+    &.slide_12
+    {
+            width: 400px;
+            font-size: 16px;
+            font-family: Gerogia;
+            text-indent: 30px;
+            line-height: 1.25;
+    }
+
+    &.slide_3 {
+        p {
+            text-align: left;
+        }
+        &:before{
+            .before("slide_3 basic left");
+        }
+    }
+
+    &.slide_4 {
+        p {
+            text-align: left;
+        }
+        &:before{
+            .before("slide_4 typograpy left");
+        }
+    }
+
+    &.slide_5 {
+        p {
+            text-align: left;
+        }
+        &:before{
+            .before("slide_5 kp good");
+        }
+    }
+
+    &.slide_6 {
+        p {
+            text-align: justify;
+        }
+        &:before{
+            .before("slide_6 justify");
+        }
+    }
+
+    &.slide_7 {
+        p {
+            text-align: justify;
+        }
+        &:before{
+            .before("slide_7 justify hyphen");
+        }
+    }
+
+    &.slide_8 {
+        p {
+            text-align: left;
+        }
+        &:before{
+            .before("slide_8 left hyphen");
+        }
+    }
+
+    &.slide_9 {
+        p {
+            text-align: left;
+        }
+        &:before{
+            .before("slide_9 left kp");
+        }
+    }
+
+    &.slide_10 {
+        p {
+            text-align: justify;
+        }
+        &:before{
+            .before("slide_10 justify hyphen");
+        }
+    }
+
+    &.slide_11 {
+        p {
+            text-align: left;
+        }
+        &:before{
+            .before("slide_11 kp");
+        }
+    }
+
+    &.knuth-plass {
+        span.line {
+            display: block;
+            text-align: left;
+        }
+    }
+    &.knuth-plass-left {
+        p {
+            text-indent: 0 !important;
+        }
+        span.line {
+            display: block;
+            text-align: left;
+        }
+    }
+    &.knuth-plass-triangle {
+        p {
+            text-indent: 0 !important;
+        }
+        span.line {
+            position: relative;
+        }
+        span.line {
+            display: block;
+            text-align: left;
+        }
+    }
+}
+
+span.aside {
+    width: 0;
+    overflow: visible;
+    position: absolute;
+    left: 410px;
+    font-size: 10px;
+}
