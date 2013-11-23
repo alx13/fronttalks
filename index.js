@@ -127,7 +127,8 @@ format = function format(para, align) {
 
     nodes.push(Typeset.linebreak.penalty(0, Typeset.linebreak.infinity, 0));
     nodes.push(Typeset.linebreak.glue(0, Typeset.linebreak.infinity, 0));
-    nodes.push(Typeset.linebreak.penalty(0, -Typeset.linebreak.infinity, 0));
+    nodes.push(Typeset.linebreak.penalty(0, -Typeset.linebreak.infinity, 1));
+
     if (align === 'sand-clock') {
         var triangleArray = [];
         for (var k = 0; k < 18; k+=1) {
