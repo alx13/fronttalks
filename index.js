@@ -76,7 +76,13 @@ hyphenateToNodes = function (word) {
         if (hyphenated.length > 1) {
             hyphenated.forEach(function(syll,syllIndex){
                 nodes.push(Typeset.linebreak.box(measure(syll),syll));
-                thisHyphenPenalty = (hyphenPenalty*hyphenated.length-syllIndex*hyphenPenalty) > hyphenPenalty ? hyphenPenalty*hyphenated.length-syllIndex*hyphenPenalty : hyphenPenalty;
+                thisHyphenPenalty = hyphenPenalty;
+                if ((hyphenPenalty*hyphenated.length-syllIndex*hyphenPenalty) > hyphenPenalty) {
+                    thisHyphenPenalty = hyphenPenalty*hyphenated.length-syllIndex*hyphenPenalty;
+                }
+                if ((hyphenPenalty*hyphenated.length-syllIndex*hyphenPenalty) > 400) {
+                    thisHyphenPenalty = 400;
+                }
                 nodes.push(Typeset.linebreak.penalty(measure('-'), thisHyphenPenalty, 1, true));
             });
             nodes.pop();
